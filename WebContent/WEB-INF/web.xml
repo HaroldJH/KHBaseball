@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>JSPTest</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/test.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/test2.jsp</location>
+	</error-page>
+	<servlet>
+		<servlet-name>PlayerAdd</servlet-name>
+		<servlet-class>com.bs.admin.PlayerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PlayerAdd</servlet-name>
+		<url-pattern>/PlayerAdd.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PlayerAddOk</servlet-name>
+		<servlet-class>com.bs.admin.PlayerAddOk</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PlayerAddOk</servlet-name>
+		<url-pattern>/PlayerAddOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PlayerDel</servlet-name>
+		<servlet-class>com.bs.admin.PlayerDel</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PlayerDel</servlet-name>
+		<url-pattern>/PlayerDel.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PlayerDelOk</servlet-name>
+		<servlet-class>com.bs.admin.PlayerDelOk</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PlayerDelOk</servlet-name>
+		<url-pattern>/PlayerDelOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Compare</servlet-name>
+		<servlet-class>com.bs.admin.Compare</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Compare</servlet-name>
+		<url-pattern>/Admin/Compare.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CompareList</servlet-name>
+		<servlet-class>com.bs.admin.CompareList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CompareList</servlet-name>
+		<url-pattern>/Admin/CompareList.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RemoveList</servlet-name>
+		<servlet-class>com.bs.admin.RemoveList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemoveList</servlet-name>
+		<url-pattern>/Admin/RemoveList.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RemoveListDel</servlet-name>
+		<servlet-class>com.bs.admin.RemoveListDel</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemoveListDel</servlet-name>
+		<url-pattern>/Admin/RemoveListDel.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RemoveListDelOk</servlet-name>
+		<servlet-class>com.bs.admin.RemoveListDelOk</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemoveListDelOk</servlet-name>
+		<url-pattern>/Admin/RemoveListDelOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ScoutList</servlet-name>
+		<servlet-class>com.bs.admin.ScoutList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ScoutList</servlet-name>
+		<url-pattern>/Admin/ScoutList.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ScoutBList</servlet-name>
+		<servlet-class>com.bs.admin.ScoutBList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ScoutBList</servlet-name>
+		<url-pattern>/Admin/ScoutBList.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ScoutB</servlet-name>
+		<servlet-class>com.bs.admin.ScoutB</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ScoutB</servlet-name>
+		<url-pattern>/Admin/ScoutB.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Scout</servlet-name>
+		<servlet-class>com.bs.admin.Scout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Scout</servlet-name>
+		<url-pattern>/Admin/Scout.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Cast</servlet-name>
+		<servlet-class>com.bs.cast.Cast</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Cast</servlet-name>
+		<url-pattern>/Cast.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CastAjax</servlet-name>
+		<servlet-class>com.bs.cast.CastAjax</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CastAjax</servlet-name>
+		<url-pattern>/CastAjax.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>schedule</servlet-name>
+		<servlet-class>com.bs.cast.PlaySchedule</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>schedule</servlet-name>
+		<url-pattern>/PlaySchedule.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>TeamCompare</servlet-name>
+		<servlet-class>com.bs.admin.TeamCompare</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TeamCompare</servlet-name>
+		<url-pattern>/Admin/TeamCompare.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RecomLineUp</servlet-name>
+		<servlet-class>com.bs.admin.RecomLineUp</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RecomLineUp</servlet-name>
+		<url-pattern>/Admin/RecomLineUp.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.bs.admin.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginOk</servlet-name>
+		<servlet-class>com.bs.admin.LoginOk</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginOk</servlet-name>
+		<url-pattern>/LoginOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.bs.admin.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout.do</url-pattern>
+	</servlet-mapping>
+	
+	
+	 <servlet>
+  	<servlet-name>List1</servlet-name>
+  	<servlet-class>com.bs.rank.List1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>List1</servlet-name>
+  	<url-pattern>/Rank/List1.do</url-pattern>
+  </servlet-mapping> 
+  
+  
+  <servlet>
+  	<servlet-name>YearData</servlet-name>
+  	<servlet-class>com.bs.rank.YearData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>YearData</servlet-name>
+  	<url-pattern>/Rank/YearData.do</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  	<servlet-name>Index</servlet-name>
+  	<servlet-class>com.bs.rank.Index</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Index</servlet-name>
+  	<url-pattern>/Index.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <!-- 게시판 -->
+    <servlet>
+     <servlet-name>Write</servlet-name>
+     <servlet-class>com.bs.board.Write</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Write</servlet-name>
+     <url-pattern>/Board/Write.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>WriteOk</servlet-name>
+     <servlet-class>com.bs.board.WriteOk</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>WriteOk</servlet-name>
+     <url-pattern>/Board/WriteOk.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+     <servlet-name>List</servlet-name>
+     <servlet-class>com.bs.board.List</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>List</servlet-name>
+     <url-pattern>/Board/List.do</url-pattern>
+  </servlet-mapping>
+ <servlet>
+     <servlet-name>View</servlet-name>
+     <servlet-class>com.bs.board.View</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>View</servlet-name>
+     <url-pattern>/Board/View.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>Edit</servlet-name>
+     <servlet-class>com.bs.board.Edit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Edit</servlet-name>
+     <url-pattern>/Board/Edit.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>Del</servlet-name>
+     <servlet-class>com.bs.Board.Del</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Del</servlet-name>
+     <url-pattern>/Board/Del.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>EditOk</servlet-name>
+     <servlet-class>com.bs.board.EditOk</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>EditOk</servlet-name>
+     <url-pattern>/Board/EditOk.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>DelOk</servlet-name>
+     <servlet-class>com.bs.board.DelOk</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>DelOk</servlet-name>
+     <url-pattern>/Board/DelOk.do</url-pattern>
+  </servlet-mapping>
+<!--게시판끝  -->
+<!--기록  -->
+   <servlet>
+     <servlet-name>BatterRecord</servlet-name>
+     <servlet-class>com.bs.record.BatterRecord</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>BatterRecord</servlet-name>
+     <url-pattern>/record/BatterRecord.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+     <servlet-name>record</servlet-name>
+     <servlet-class>com.bs.record.Record</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>record</servlet-name>
+     <url-pattern>/record/record.do</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+     <servlet-name>PitcherRecord</servlet-name>
+     <servlet-class>com.bs.record.PitcherRecord</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>PitcherRecord</servlet-name>
+     <url-pattern>/record/PitcherRecord.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>TeamBatterRecord</servlet-name>
+     <servlet-class>com.bs.record.TeamBatterRecord</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>TeamBatterRecord</servlet-name>
+     <url-pattern>/record/TeamBatterRecord.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>TeamBatter</servlet-name>
+     <servlet-class>com.bs.record.TeamBatter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>TeamBatter</servlet-name>
+     <url-pattern>/record/Teambatter.do</url-pattern>
+  </servlet-mapping>
+  
+
+   <servlet>
+     <servlet-name>TeamRbi</servlet-name>
+     <servlet-class>com.bs.record.Teamrbi</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>TeamRbi</servlet-name>
+     <url-pattern>/record/Teamrbi.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>TeamPitcher</servlet-name>
+     <servlet-class>com.bs.record.TeamPitcher</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>TeamPitcher</servlet-name>
+     <url-pattern>/record/TeamPitcher.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>homeruns</servlet-name>
+     <servlet-class>com.bs.record.Homeruns</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>homeruns</servlet-name>
+     <url-pattern>/record/homeruns.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>hitss</servlet-name>
+     <servlet-class>com.bs.record.Hitss</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>hitss</servlet-name>
+     <url-pattern>/record/Hitss.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+     <servlet-name>battingaverage</servlet-name>
+     <servlet-class>com.bs.record.Battingaverage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>battingaverage</servlet-name>
+     <url-pattern>/record/battingaverage.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>rbi</servlet-name>
+     <servlet-class>com.bs.record.Rbi</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>rbi</servlet-name>
+     <url-pattern>/record/rbi.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+     <servlet-name>Schedule</servlet-name>
+     <servlet-class>com.bs.cast.PlaySchedule</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Schedule</servlet-name>
+     <url-pattern>/cast/PlaySchedule.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+     <servlet-name>cast</servlet-name>
+     <servlet-class>com.bs.cast.Cast</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>cast</servlet-name>
+     <url-pattern>/cast/Cast.do</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+     <servlet-name>LineUp</servlet-name>
+     <servlet-class>com.bs.admin.LineUp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>LineUp</servlet-name>
+     <url-pattern>/Admin/LineUp.do</url-pattern>
+  </servlet-mapping>
+
+</web-app>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
